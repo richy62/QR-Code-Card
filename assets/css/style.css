@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Family: url("https://fonts.google.com/specimen/Outfit");
+    --Weights-400: 400;
+    --Weights-700: 700;
+    --Font-size-para: 15px;
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: hsl(220deg 66.16% 88.26%);
+}
+
+main {
+    position: absolute;
+    width: 260px;
+    height: 450px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px grey;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: 18rem;
+    border-radius: 5px;
+}
+
+.content-sec {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+p:first-child {
+    font-size: 1.3rem;
+    color: var(--Dark-blue);
+    font-weight: var(--Weights-700);
+
+}
+
+p:last-child {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--Grayish-blue);
+    font-weight: var(--Weights-400);
+
+}
+@media screen and (max-width:557px) and (min-width:340px) {
+    main {
+        width: 220px;
+        height: 390px;
+      
+    }
+    img {
+        width: 100%;
+        height: 16rem;
+        border-radius: 5px;
+    }
+    p:first-child {
+        font-size: 1.1rem;
+        }
+        p:last-child {
+            margin-top: 1rem;
+            font-size: 14px;
+            color: var(--Grayish-blue);
+            font-weight: var(--Weights-400);
+        
+        }
+}
+@media screen and (max-width:340px) and (min-width:270px) {
+    main {
+        width: 180px;
+        height: 340px;
+      
+    }
+    img {
+        width: 100%;
+        height: 13rem;
+        border-radius: 5px;
+    }
+    p:first-child {
+        font-size: 1rem;
+        }
+        p:last-child {
+            font-size: 12px;
+        
+        }
+}
+@media screen and (max-width:270px)  {
+    main {
+         width: 160px;
+        height: 308px;
+        padding: 15px;
+    }
+    img {
+        width: 100%;
+        height: 12rem;
+        border-radius: 5px;
+    }
+    p:first-child {
+        font-size: 0.8rem;
+        }
+        p:last-child {
+            font-size: 11px;
+        
+        }
+}
